@@ -298,6 +298,33 @@
 
 }
 
+/* Game Genre Section Style */
+.game-genre-section{
+    background-color: #FFF9FC;
+}
+.game-genre {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.game-categories {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0B0223;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 10px;
+}
+.game-categories:hover{
+    border: 1px solid #FF42A5;
+    color:#FF42A5;
+}
+
 
 
 
@@ -453,6 +480,7 @@
         right: 120px;
 
     }
+
 
 
 
