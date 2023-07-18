@@ -1,4 +1,8 @@
 /* Shares Styles */
+:root {
+    /* --primary-title:#F948B2 0%, #8758F1 100%; */
+}
+
 * {
     font-family: 'Work Sans', sans-serif;
     margin: 0 auto;
@@ -10,6 +14,7 @@
     display: flex;
     margin-top: 40px;
 }
+
 .nav-logo-title {
     display: flex;
     align-items: center;
@@ -18,6 +23,7 @@
     gap: 20px;
 
 }
+
 .nav-logo {
     width: 86.041px;
     height: 40px;
@@ -38,7 +44,7 @@
 .follow {
     display: flex;
     align-items: center;
-    
+
     color: #3C354F;
     border: 1px solid #0B0223;
     border-radius: 8px;
@@ -57,7 +63,75 @@
     height: 24px;
 }
 
+/* Banner Section Styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+
+}
+
+.banner-content {
+    background-image: url("../images/Group\ 14.png");
+    width: 901px;
+    height: 700px;
+justify-content: center;
+text-align: center;
+
+
+}
+
+.banner-title-1 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner-title-2 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 5.9rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-content p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.btn-sign {
+    width: 156px;
+    height: 65px;
+
+    margin-top: 40px;
+    padding: 20px 40px;
+    border-radius: 48px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-style: none;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+.btn-rogue {
+    width: 185px;
+    height: 65px;
+
+    padding: 20px 40px;
+    border-radius: 48px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-style: none;
+    background: #4EC5F7;
+}
 
 
 
@@ -87,14 +161,15 @@
 
 
 /* Mobile Responsive */
-@media screen and (max-width:576px){
-.nav-bar{
-    flex-direction: column;
-    gap: 50px;
-}
-.nav-content{
-    flex-direction: column;
-}
+@media screen and (max-width:576px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
 
 
 }
@@ -111,11 +186,11 @@
 
 
 /* Tablet Responsive */
-@media screen and (min-width:576px) and (max-width:992px){
-    .nav-bar{
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-bar {
         flex-direction: column;
         gap: 50px;
     }
-    
+
 
 }
