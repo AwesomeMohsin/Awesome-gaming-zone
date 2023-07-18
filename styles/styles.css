@@ -1,0 +1,121 @@
+/* Shares Styles */
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0 auto;
+}
+
+/* Navigation Styles */
+
+.nav-bar {
+    display: flex;
+    margin-top: 40px;
+}
+.nav-logo-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    gap: 20px;
+
+}
+.nav-logo {
+    width: 86.041px;
+    height: 40px;
+}
+
+.nav-title span {
+    color: #FF42A5;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    
+    color: #3C354F;
+    border: 1px solid #0B0223;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 16px;
+    gap: 20px;
+}
+
+#youtube {
+    width: 33.916px;
+    height: 24px;
+}
+
+#tiktok {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width:576px){
+.nav-bar{
+    flex-direction: column;
+    gap: 50px;
+}
+.nav-content{
+    flex-direction: column;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Responsive */
+@media screen and (min-width:576px) and (max-width:992px){
+    .nav-bar{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+
+}
