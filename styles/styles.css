@@ -201,8 +201,8 @@
     gap: 24px;
     margin-bottom: 120px;
 }
-.image-details, .online-img p {
-    position: absolute;
+.online-img p {
+    position: relative;
     text-align: left;
     margin-left: 0;
     width: 342px;
@@ -212,14 +212,40 @@
     line-height: 30px;
     
 }
+.online-img .hover-caption{
+    position: relative;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      box-sizing: border-box;
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+}
+.online-img .hover-caption .hover-icon{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+}
 
+/* Hover styles */
 .online-img img:hover{
     border-radius: 24px;
     border: 5px solid #FF42A5;
     filter: brightness(50%);
-
 }
 
+.online-img:hover .hover-caption{
+    opacity: 1;
+}
+
+.online-img:hover .hover-caption .hover-icon,
+    .online-img:hover .hover-caption span {
+      pointer-events: auto; 
+    }
 
 
 
@@ -247,6 +273,7 @@
 
 
 /* Mobile Responsive */
+
 @media screen and (max-width:576px) {
     .nav-bar {
         flex-direction: column;
@@ -302,6 +329,31 @@
         height: auto;
     }
 
+/* Online videos section style */
+
+.online-videos-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.online-img .hover-caption{
+    position: relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -500%);
+      text-align: center;
+      color: #fff;
+      box-sizing: border-box;
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+}
+
+.online-videos-img p{
+    text-align: center;
+}
 
 
 
@@ -321,6 +373,7 @@
 
 
 /* Tablet Responsive */
+
 @media screen and (min-width:576px) and (max-width:992px) {
     .nav-bar {
         flex-direction: column;
@@ -368,6 +421,18 @@
         width: 100%;
         height: auto;
     }
+
+/* Online videos section style */
+
+    .online-videos-img{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .online-videos-img p{
+        text-align: center;
+    }
+    
 
 
 
