@@ -16,7 +16,7 @@
     margin-bottom: 40px;
 }
 
-.nav-logo-title {
+.main-logo-title {
     display: flex;
     align-items: center;
     font-size: 2.8rem;
@@ -25,12 +25,12 @@
 
 }
 
-.nav-logo {
+.main-logo {
     width: 86.041px;
     height: 40px;
 }
 
-.nav-title span {
+.main-title span {
     color: #FF42A5;
 }
 
@@ -257,13 +257,10 @@
     text-align: right;
     margin: 0 auto;
     width: 80%;
-
 }
 
 .play-instantly-content {
     width: 50%;
-
-
 }
 
 .play-instantly-title {
@@ -295,15 +292,13 @@
     position: relative;
     bottom: 300px;
     right: 200px;
-
 }
 
 /* Game Genre Section Style */
+
 .game-genre-section {
     background-color: #FFF9FC;
     padding: 100px 0;
-
-
 }
 
 .game-genre {
@@ -335,28 +330,60 @@
     color: #FF42A5;
 }
 
+/* Footer Styles */
 
-/* .game-genre-container-1{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr) ;
-    gap: 27px;
-    
+.footer {
+    background: #0B0223;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 60px;
+    margin-top: 55px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
 
 }
-.game-genre-container-2{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr) ;
-    gap: 33px;
-} */
+
+.footer-socials {
+    display: flex;
+    gap: 40px;
+    margin-top: 55px;
+}
+
+.footer-socials img {
+    width: 40px;
+    height: 40px;
+}
+
+#youtube-1 {
+    width: 55px;
+    height: 40px;
+}
+
+.footer-terms {
+    display: flex;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    gap: 60px;
+    margin-top: 65px;
+
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    margin-top: 64px;
 
 
-
-
-
+}
 
 
 
@@ -514,8 +541,6 @@
     .game-genre {
 
         grid-template-columns: repeat(3, 1fr);
-
-
     }
 
     .game-categories {
@@ -525,13 +550,43 @@
         gap: 0px;
         margin: 0;
     }
-    .game-categories img{
+
+    .game-categories img {
         width: 30px;
         height: 30px;
-        
     }
 
-    
+    /* Footer Styles */
+
+    .footer {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .footer-terms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        padding-top: 50px;
+
+    }
+
 }
 
 
@@ -606,8 +661,6 @@
     .online-videos-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
-
     }
 
     .online-videos-img p {
@@ -620,7 +673,6 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-
     }
 
     .play-instantly-content {
@@ -629,7 +681,6 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
 
     .play-instantly-title {
@@ -644,13 +695,11 @@
     }
 
     .play-instantly-description {
-
         width: 100%;
         margin-bottom: 70px;
     }
 
     .play-instantly-img {
-
         width: 80%;
     }
 
@@ -660,21 +709,32 @@
     }
 
     .play-instantly-img-2 {
-
         width: 50%;
         bottom: 250px;
         right: 200px;
 
     }
-      .game-genre {
-
+/* Game Genre */
+    .game-genre {
         grid-template-columns: repeat(3, 1fr);
-
 
     }
 
+    /* Footer Style */
+    .footer-content{
+        gap: 25px;
+        padding: 0;
+      }
+      .footer-terms {
+        gap: 30px;
+        padding: 0;
+    }
 
+  .footer-copyright {
+        
+        padding-top: 50px;
 
+    }
 
 
 }
