@@ -46,21 +46,27 @@
 .follow {
     display: flex;
     align-items: center;
-
     color: #3C354F;
     border: 1px solid #0B0223;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 16px;
-    gap: 20px;
+    gap: 12px;
+}
+.nav-btn{
+    background: none;
+    border-style: none;
+}
+.nav-btn:hover{
+    cursor:pointer;
 }
 
-#youtube {
+#nav-youtube {
     width: 33.916px;
     height: 24px;
 }
 
-#tiktok {
+#nav-tiktok {
     width: 24px;
     height: 24px;
 }
@@ -270,6 +276,7 @@
     font-weight: 700;
     line-height: 60px;
     margin-bottom: 24px;
+    color: #0B0223;
 }
 
 .play-instantly-title span {
@@ -281,6 +288,8 @@
 
 .play-instantly-description {
     width: 50%;
+    line-height: 30px;
+    color: #534C64;
 }
 
 .play-instantly-img {
@@ -316,8 +325,8 @@
     color: #0B0223;
     border-radius: 50px;
     background: #FFF;
-    padding: 10px;
-    gap: 16px;
+    padding: 5px;
+    gap: 10px;
 }
 
 .game-categories img {
@@ -348,6 +357,13 @@
     font-size: 1.1rem;
     font-weight: 600;
 
+}
+.social-btn{
+    background: none;
+    border-style: none;
+}
+.social-btn:hover{
+    cursor:pointer;
 }
 
 .footer-socials {
@@ -705,16 +721,15 @@
 
     .play-instantly-img img {
         width: 90%;
-
     }
 
     .play-instantly-img-2 {
         width: 50%;
         bottom: 250px;
         right: 200px;
-
     }
 /* Game Genre */
+
     .game-genre {
         grid-template-columns: repeat(3, 1fr);
 
@@ -730,10 +745,8 @@
         padding: 0;
     }
 
-  .footer-copyright {
-        
+  .footer-copyright {  
         padding-top: 50px;
-
     }
 
 
