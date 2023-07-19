@@ -53,12 +53,14 @@
     padding: 16px;
     gap: 12px;
 }
-.nav-btn{
+
+.nav-btn {
     background: none;
     border-style: none;
 }
-.nav-btn:hover{
-    cursor:pointer;
+
+.nav-btn:hover {
+    cursor: pointer;
 }
 
 #nav-youtube {
@@ -306,15 +308,29 @@
 /* Game Genre Section Style */
 
 .game-genre-section {
+    display: flex;
+    flex-direction: column;
     background-color: #FFF9FC;
     padding: 100px 0;
 }
 
-.game-genre {
+/* .game-genre {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     gap: 24px;
+} */
+
+/* .game-genre{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(5, 1fr));
+    grid-gap: 1rem;
+} */
+.game-genre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 60%;
 }
 
 .game-categories {
@@ -358,12 +374,14 @@
     font-weight: 600;
 
 }
-.social-btn{
+
+.social-btn {
     background: none;
     border-style: none;
 }
-.social-btn:hover{
-    cursor:pointer;
+
+.social-btn:hover {
+    cursor: pointer;
 }
 
 .footer-socials {
@@ -425,6 +443,7 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
     .nav-content {
@@ -555,8 +574,10 @@
 
     /* Game Genre Section */
     .game-genre {
-
+        display: grid;
+        width: 90%;
         grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
 
     .game-categories {
@@ -728,24 +749,37 @@
         bottom: 250px;
         right: 200px;
     }
-/* Game Genre */
+
+    /* Game Genre */
 
     .game-genre {
+        display: grid;
+        width: 80%;
         grid-template-columns: repeat(3, 1fr);
-
+        gap: 16px;
+    }
+    .game-categories {
+        width: 100%;
+        font-size: 0.6rem;
+        padding: 0;
+        gap: 0px;
+        margin: 0;
     }
 
+    
+
     /* Footer Style */
-    .footer-content{
+    .footer-content {
         gap: 25px;
         padding: 0;
-      }
-      .footer-terms {
+    }
+
+    .footer-terms {
         gap: 30px;
         padding: 0;
     }
 
-  .footer-copyright {  
+    .footer-copyright {
         padding-top: 50px;
     }
 
